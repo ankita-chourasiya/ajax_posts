@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# AJAX Asynchronous JavaScript and XML. AJAX is a technique for creating fast and dynamic web pages.
+# With the help of this we can update parts of a web page, without reloading the whole page.
 
-Things you may want to cover:
+* Set 'remote: true' option enables AJAX for the form.
 
-* Ruby version
+* Create `app/assets/javascripts/application.js` and add package `//= require rails-ujs`
 
-* System dependencies
+* To call the ajax request inside controller action i.e create set format is
+  ```respond_to do |format|
+      format.js
+    end```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Meanwhile create a file inside a view/posts 
+  `create.js.erb`
