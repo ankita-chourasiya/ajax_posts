@@ -8,9 +8,11 @@
 * Create `app/assets/javascripts/application.js` and add package `//= require rails-ujs`
 
 * To call the ajax request inside controller action i.e create set format is
-  ```respond_to do |format|
+  ```
+    respond_to do |format|
       format.js
-    end```
+    end
+  ```
 
 * Meanwhile create a file inside a view/posts 
   `create.js.erb`
